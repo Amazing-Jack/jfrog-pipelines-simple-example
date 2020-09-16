@@ -77,4 +77,5 @@ pipelines:
             - name: github_jack            
         execution:
           onExecute:
-            - 'curl -H "Authorization: token ${int_github_jack_token}" ${int_github_jack_url}/rate_limit'
+            - 'curl -H -k "Authorization: token ${int_github_jack_token}" ${int_github_jack_url}/rate_limit'
+            - env
