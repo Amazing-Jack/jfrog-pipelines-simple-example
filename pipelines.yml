@@ -78,4 +78,4 @@ pipelines:
         execution:
           onExecute:
             - 'curl -H -k "Authorization: token ${int_github_jack_token}" ${int_github_jack_url}/rate_limit'
-            - env
+            - 'env'
