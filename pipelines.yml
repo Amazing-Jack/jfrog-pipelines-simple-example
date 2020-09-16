@@ -2,8 +2,8 @@ resources:
   - name: myGitRepo
     type: GitRepo
     configuration:
-      gitProvider: my_github
-      path: jfrog/jfrog-pipelines-simple-example
+      gitProvider: github_jack
+      path: Amazing-Jack/pipeline
       branches:
         include: master
   - name: myBuildInfo
