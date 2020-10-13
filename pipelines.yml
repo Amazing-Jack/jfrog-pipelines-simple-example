@@ -77,5 +77,7 @@ pipelines:
             - name: github_jack            
         execution:
           onExecute:
-            - 'curl -H "X-JFrog-Art-Api:AKCp5fTjoGe9poa5XJJKfKkJsZdRHrGDoYEcKdCYwDyJLaumnkDs7QiKcQi19sy6BdBR7LyiT" -X GET "${int_artifactory_url}access/api/v1/system/ping"'
+            - 'curl -H "X-JFrog-Art-Api:AKCp5fTjoGe9poa5XJJKfKkJsZdRHrGDoYEcKdCYwDyJLaumnkDs7QiKcQi19sy6BdBR7LyiT" -X GET "http://182.92.214.141:8082/access/api/v1/system/ping"'
             - 'env'
+            - 'printenv int_artifactory_url'
+            - 'print ${int_artifactory_url}'
