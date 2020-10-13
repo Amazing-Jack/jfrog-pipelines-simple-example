@@ -77,5 +77,5 @@ pipelines:
             - name: github_jack            
         execution:
           onExecute:
-            - 'curl -H -k "Authorization: token ${int_github_jack_token}" ${int_github_jack_url}/rate_limit'
+            - 'curl -H "X-JFrog-Art-Api:AKCp5fTjoGe9poa5XJJKfKkJsZdRHrGDoYEcKdCYwDyJLaumnkDs7QiKcQi19sy6BdBR7LyiT" -X GET "int_artifactory_url/access/api/v1/system/ping"'
             - 'env'
